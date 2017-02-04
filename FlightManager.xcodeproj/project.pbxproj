@@ -13,6 +13,7 @@
 		411550B81E44E6D500300274 /* FlightManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 411550B61E44E6D500300274 /* FlightManager.xcdatamodeld */; };
 		411550BA1E44E6D500300274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411550B91E44E6D500300274 /* Assets.xcassets */; };
 		411550BD1E44E6D500300274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411550BB1E44E6D500300274 /* LaunchScreen.storyboard */; };
+		411550C51E460BB100300274 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411550C41E460BB100300274 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		411550B91E44E6D500300274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		411550BC1E44E6D500300274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		411550BE1E44E6D500300274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		411550C41E460BB100300274 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				411550AF1E44E6D500300274 /* AppDelegate.swift */,
 				411550B11E44E6D500300274 /* ViewController.swift */,
 				411550B31E44E6D500300274 /* Main.storyboard */,
+				411550C41E460BB100300274 /* SecondViewController.swift */,
 				411550B91E44E6D500300274 /* Assets.xcassets */,
 				411550BB1E44E6D500300274 /* LaunchScreen.storyboard */,
 				411550BE1E44E6D500300274 /* Info.plist */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411550C51E460BB100300274 /* SecondViewController.swift in Sources */,
 				411550B81E44E6D500300274 /* FlightManager.xcdatamodeld in Sources */,
 				411550B21E44E6D500300274 /* ViewController.swift in Sources */,
 				411550B01E44E6D500300274 /* AppDelegate.swift in Sources */,
