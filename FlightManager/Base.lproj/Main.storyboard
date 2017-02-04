@@ -55,18 +55,34 @@
                                     <navigationItem title="Title" id="Zdu-lV-Cat"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21X-Sb-mRW">
+                                <rect key="frame" x="276" y="199" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendIt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jZO-fX-yN6"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Data here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="89a-gZ-uSA">
+                                <rect key="frame" x="44" y="199" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Flight Setup" id="WOV-uC-bvH">
                         <barButtonItem key="rightBarButtonItem" title="Departure" id="l92-Ky-BPZ">
                             <connections>
-                                <segue destination="W5W-TC-7Tu" kind="show" id="xgx-LN-d4v"/>
+                                <segue destination="W5W-TC-7Tu" kind="show" identifier="Seg2" id="xgx-LN-d4v"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="W5W-TC-7Tu" kind="show" id="uqH-6r-IyG"/>
+                        <outlet property="dataText" destination="89a-gZ-uSA" id="kga-o0-b1T"/>
+                        <segue destination="W5W-TC-7Tu" kind="show" identifier="Seg1" id="uqH-6r-IyG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -76,7 +92,7 @@
         <!--Departure-->
         <scene sceneID="qjM-dL-3uj">
             <objects>
-                <viewController title="Departure" id="W5W-TC-7Tu" sceneMemberID="viewController">
+                <viewController title="Departure" id="W5W-TC-7Tu" customClass="SecondViewController" customModule="FlightManager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SPR-a7-KGy"/>
                         <viewControllerLayoutGuide type="bottom" id="DRv-dM-br3"/>
@@ -92,6 +108,20 @@
                                     <navigationItem title="Departure" id="v3K-v7-lSt"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Data Entered was:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck7-He-KvS">
+                                <rect key="frame" x="20" y="141" width="206" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gF-4o-9ya">
+                                <rect key="frame" x="223" y="141" width="231" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View Two" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGA-tY-fFd">
                                 <rect key="frame" x="496" y="257" width="73" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -102,13 +132,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="outputField" destination="4gF-4o-9ya" id="T1D-rR-hi6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="69n-jl-1RE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="937"/>
+            <point key="canvasLocation" x="137.6953125" y="936.71875"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uqH-6r-IyG"/>
+        <segue reference="xgx-LN-d4v"/>
     </inferredMetricsTieBreakers>
 </document>
