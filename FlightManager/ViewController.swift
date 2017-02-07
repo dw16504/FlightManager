@@ -33,13 +33,16 @@ class ViewController: UIViewController {
 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let controller = segue.destination as! SecondViewController;
         if segue.identifier == "Seg2"{
-            //let controller = segue.destination as! SecondViewController;
-            controller.data = "seg one was sent";
-        }
-        else if segue.identifier == "Seg1"{
+        let controller = segue.destination as! SecondViewController;
             controller.data = "seg two was sent";
+            // Data to Destination Controller goes here
+        }
+         if segue.identifier == "Seg3"{
+            let controller = segue.destination as! DeIceViewController;
+            controller.data2 = "it worked";
+            
+            // Data from main to De-Ice Controller goes here
         }
         
         // Pass the selected object to the new view controller.

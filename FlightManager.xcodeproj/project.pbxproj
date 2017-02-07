@@ -14,6 +14,9 @@
 		411550BA1E44E6D500300274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 411550B91E44E6D500300274 /* Assets.xcassets */; };
 		411550BD1E44E6D500300274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411550BB1E44E6D500300274 /* LaunchScreen.storyboard */; };
 		411550C51E460BB100300274 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411550C41E460BB100300274 /* SecondViewController.swift */; };
+		411550C71E4A5C0E00300274 /* DeIceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411550C61E4A5C0E00300274 /* DeIceViewController.swift */; };
+		411550CA1E4A650700300274 /* Winter Filled@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 411550C81E4A650700300274 /* Winter Filled@1x.png */; };
+		411550CB1E4A650700300274 /* Winter Filled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 411550C91E4A650700300274 /* Winter Filled@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		411550BC1E44E6D500300274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		411550BE1E44E6D500300274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		411550C41E460BB100300274 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		411550C61E4A5C0E00300274 /* DeIceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeIceViewController.swift; sourceTree = "<group>"; };
+		411550C81E4A650700300274 /* Winter Filled@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Winter Filled@1x.png"; path = "../../../../../../Volumes/Expansion/Remote Download/Winter Filled 50, 100 px/Winter Filled@1x.png"; sourceTree = "<group>"; };
+		411550C91E4A650700300274 /* Winter Filled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Winter Filled@2x.png"; path = "../../../../../../Volumes/Expansion/Remote Download/Winter Filled 50, 100 px/Winter Filled@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +64,12 @@
 		411550AE1E44E6D500300274 /* FlightManager */ = {
 			isa = PBXGroup;
 			children = (
+				411550C81E4A650700300274 /* Winter Filled@1x.png */,
+				411550C91E4A650700300274 /* Winter Filled@2x.png */,
 				411550AF1E44E6D500300274 /* AppDelegate.swift */,
 				411550B11E44E6D500300274 /* ViewController.swift */,
 				411550B31E44E6D500300274 /* Main.storyboard */,
+				411550C61E4A5C0E00300274 /* DeIceViewController.swift */,
 				411550C41E460BB100300274 /* SecondViewController.swift */,
 				411550B91E44E6D500300274 /* Assets.xcassets */,
 				411550BB1E44E6D500300274 /* LaunchScreen.storyboard */,
@@ -130,6 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				411550BD1E44E6D500300274 /* LaunchScreen.storyboard in Resources */,
+				411550CB1E4A650700300274 /* Winter Filled@2x.png in Resources */,
+				411550CA1E4A650700300274 /* Winter Filled@1x.png in Resources */,
 				411550BA1E44E6D500300274 /* Assets.xcassets in Resources */,
 				411550B51E44E6D500300274 /* Main.storyboard in Resources */,
 			);
@@ -144,6 +155,7 @@
 			files = (
 				411550C51E460BB100300274 /* SecondViewController.swift in Sources */,
 				411550B81E44E6D500300274 /* FlightManager.xcdatamodeld in Sources */,
+				411550C71E4A5C0E00300274 /* DeIceViewController.swift in Sources */,
 				411550B21E44E6D500300274 /* ViewController.swift in Sources */,
 				411550B01E44E6D500300274 /* AppDelegate.swift in Sources */,
 			);
